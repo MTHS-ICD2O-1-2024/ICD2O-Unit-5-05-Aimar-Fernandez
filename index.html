@@ -1,9 +1,95 @@
 <!DOCTYPE html>
-<html>
+<!--ICD2O Unit 5-05 HTML-->
+<html lang="en-ca">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="type of triangle program" />
+    <meta name="keywords" content="ICD2O, mths" />
+    <meta name="author" content="Aimar Fernandez" />
+    <meta name="viewport" content="width+device-width, initial-scale=.1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Type of Triangle Program</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <br />
+        <div class="mdl_layout__header-row">
+          <span class="mdl-layout-title"
+            >Type of Triangle Program</span
+          >
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div>
+          <img
+            src="./images/typeOfTriangle.png"
+            alt="types of triangles"
+          />
+        </div>
+        <br />
+        <div class="page-content">
+          Enter in your age
+        </div>
+        <br />
+        <form action="#">
+          <!-- Textfield -->
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="a-length"
+            />
+            <label class="mdl-textfield__label" for="sample4"> Length...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br>
+          <!-- Textfield -->
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b-length" />
+            <label class="mdl-textfield__label" for="sample4"> Length...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br>
+          <!-- Textfield -->
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="c-length" />
+            <label class="mdl-textfield__label" for="sample4"> Length...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br>
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+            onclick="myButtonClicked()"
+            type="button"
+          >
+            Identify
+          </button>
+        </form>
+        <br />
+        <br />
+        <div class="page-content-answer">
+          <div id="answer"></div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
