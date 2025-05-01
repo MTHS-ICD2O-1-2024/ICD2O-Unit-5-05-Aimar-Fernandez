@@ -16,19 +16,19 @@ function myButtonClicked() {
   const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
   //main process
   if (sumOfAngles != 180) {
-    document.getElementById("answer") = 
+    document.getElementById("answer").innerHTML = 
       "<p>This isn't a triangle</p>"
   }
   else if (aLength == bLength && aLength == cLength) {
-    document.getElementById("answer") = 
+    document.getElementById("answer").innerHTML = 
       "<p>This is an equilateral triangle</p>"
   }
-  else if ((aLength == cLength || aLength || bLength) || bLength == cLength) {
-    document.getElementById("answer") = 
+  else if ((aLength == cLength || aLength == bLength) || bLength == cLength) {
+    document.getElementById("answer").innerHTML = 
       "<p>This is an isoceles triangle</p>"
   }
   else {
-    document.getElementById("answer") = 
+    document.getElementById("answer").innerHTML = 
       "<p>This is a scalene triangle</p>"
   }
 }
